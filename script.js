@@ -86,7 +86,7 @@ nameForm.addEventListener("submit", (event) => {
   const enteredName = nameInput.value.trim();
   friendName = enteredName || "Best Friend";
 
-  titleText.textContent = `Chai for ${friendName} `;
+  titleText.textContent = `Chai for ${friendName}😍 `;
 
   landing.classList.add("hidden");
   chaiCard.classList.remove("hidden");
