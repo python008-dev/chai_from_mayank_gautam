@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chai for Best Friend</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="scene">
+    <div class="glow"></div>
+
+    <section class="landing" id="landing" aria-label="Welcome screen">
+      <h1>Welcome, Dost!</h1>
+      <p class="subtitle">Apna naam likho, phir tumhare liye pyar se chai banegi.</p>
+
+      <form id="nameForm" class="name-form">
+        <label for="friendName" class="sr-only">Enter your name</label>
+        <input id="friendName" name="friendName" type="text" maxlength="30" placeholder="Enter your name" autocomplete="name" required>
+        <button type="submit">Start Brewing</button>
+      </form>
+    </section>
+
+    <section class="card hidden" id="chaiCard" aria-label="Chai animation">
+      <h1 id="titleText">Chai for Best Friend</h1>
+      <p class="subtitle">A warm cup made with love.</p>
+
+      <div class="cup-wrap" aria-hidden="true">
+        <div class="steam steam-1"></div>
+        <div class="steam steam-2"></div>
+        <div class="steam steam-3"></div>
+
+        <div class="pour-stream"></div>
+
+        <div class="cup">
+          <div class="tea"></div>
+          <div class="cup-highlight"></div>
+        </div>
+        <div class="cup-handle"></div>
+        <div class="saucer"></div>
+      </div>
+
+      <button id="makeChaiBtn" type="button" aria-label="Make Chai">Make Chai</button>
+      <p id="message" class="message" aria-live="polite"></p>
+      <p id="senderGreeting" class="sender-greeting" aria-live="polite"></p>
+    </section>
+
+    <div id="heartLayer" class="heart-layer" aria-hidden="true"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
