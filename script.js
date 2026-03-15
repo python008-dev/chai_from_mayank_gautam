@@ -86,7 +86,7 @@ nameForm.addEventListener("submit", (event) => {
   const enteredName = nameInput.value.trim();
   friendName = enteredName || "Best Friend";
 
-  titleText.textContent = `Chai for ${friendName}`;
+  titleText.textContent = `Chai for ${friendName} `;
 
   landing.classList.add("hidden");
   chaiCard.classList.remove("hidden");
@@ -115,7 +115,7 @@ makeChaiBtn.addEventListener("click", () => {
 
   setTimeout(() => {
     cupWrap.classList.add("steaming");
-    typeMessage(`Chai for dear ${friendName} ❤️`);
+    typeMessage(`Chai for dear ${friendName} ji ❤️`);
     senderGreeting.textContent = `Warm ${getTimeBasedGreeting()}, have a chai from Mayank Gautam ☕`;
     senderGreeting.classList.add("show");
     startHearts();
